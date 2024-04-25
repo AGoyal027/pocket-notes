@@ -18,25 +18,32 @@
 }
 
 .container h2 {
-  margin: 1rem;
+  margin: 3rem 5rem 0 5rem;
+  position: sticky;
+  font-weight: 500;
 }
 
 .button {
+  position: absolute;
+  bottom: 1rem;
+  left: 14.5rem;
   color: #fff;
-  background-color: #000;
+  background-color: #16008B;
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.75rem 0.25rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.25rem;
   margin: 0 1rem;
   margin-bottom: 1rem;
   border: none;
   outline: none;
-  border-radius: 25px;
-  display: flex;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 10px;  */
   cursor: pointer;
 }
 
@@ -71,9 +78,9 @@
   gap: 1.5rem;
 }
 
-.modalContent > div {
+.modalContent>div {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .modalContent input {
@@ -99,8 +106,8 @@
 }
 
 .color {
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
   border-radius: 15px;
 }
 
@@ -109,7 +116,7 @@
   gap: 20px;
 }
 
-.colorComp > div {
+.colorComp>div {
   display: flex;
   gap: 7px;
   justify-content: center;
@@ -121,7 +128,7 @@
   align-self: center;
 }
 
-button + label {
+button+label {
   color: red;
   font-size: 0.75rem;
   font-weight: 500;
@@ -155,6 +162,7 @@ button + label {
   .container {
     max-width: 325px;
   }
+
   .groupName {
     padding: 1rem;
     margin-left: 1rem;
@@ -162,17 +170,20 @@ button + label {
     border-bottom-left-radius: 12px;
     width: 310px;
   }
+
   .modalContent {
     width: 400px;
     height: 275px;
     gap: 2rem;
     font-size: 1.25rem;
   }
+
   .modalContent h3,
-  .modalContent > div:first-of-type,
-  .modalContent > div:last-of-type {
+  .modalContent>div:first-of-type,
+  .modalContent>div:last-of-type {
     margin-left: 3rem;
   }
+
   .modalContent input {
     width: 180px;
     padding: 0.5rem 1rem;

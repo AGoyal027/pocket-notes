@@ -95,12 +95,11 @@ function CreateNote() {
 			<button className={styles.button} onClick={toggleModal}>
 				{" "}
 				<FaPlus size="1em" />
-				Create Notes group
 			</button>
 			{modal && (
 				<div className={styles.modal} onClick={handleClickOutside}>
 					<div className={styles.modalContent}>
-						<h3>Create New Notes</h3>
+						<h3>Create New group</h3>
 						<div>
 							<label>Group Name</label>
 							<input
